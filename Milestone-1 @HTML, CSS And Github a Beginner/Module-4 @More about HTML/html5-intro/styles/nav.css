@@ -20,4 +20,20 @@ nav li:hover{
     }
 }
 
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    padding: 5px;
+    margin: 0px;
+}
+
+nav li:hover > .dropdown{
+    display: block;
+    background-color: #f4b0b0;
+    a{
+        color: black;
+    }
+}
+
 
