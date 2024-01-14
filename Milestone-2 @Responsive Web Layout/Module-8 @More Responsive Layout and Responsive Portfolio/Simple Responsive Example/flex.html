@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .items{
+            background-color: brown;
+            border: 1px solid blue;
+            height: 50px;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px){
+            .container{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maxime modi odit amet recusandae. Laboriosam velit obcaecati provident at deserunt.</p>
+        </div>
+        <div class="box">
+            <p>Dicta earum obcaecati reprehenderit provident aliquid? Provident atque, alias sed id odio esse repellat ipsa? Maxime obcaecati aliquid corporis itaque.</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="items">
+            <h3>items -1</h3>
+        </div>
+        <div class="items">
+            <h3>items -2</h3>
+        </div>
+        <div class="items">
+            <h3>items -3</h3>
+        </div>
+        <div class="items">
+            <h3>items -4</h3>
+        </div>
+        <div class="items">
+            <h3>items -5</h3>
+        </div>
+        <div class="items">
+            <h3>items -6</h3>
+        </div>
+        <div class="items">
+            <h3>items -7</h3>
+        </div>
+        <div class="items">
+            <h3>items -8</h3>
+        </div>
+        <div class="items">
+            <h3>items -9</h3>
+        </div>
+        <div class="items">
+            <h3>items -10</h3>
+        </div>
+        <div class="items">
+            <h3>items -11</h3>
+        </div>
+        <div class="items">
+            <h3>items -12</h3>
+        </div>
+        <div class="items">
+            <h3>items -13</h3>
+        </div>
+        <div class="items">
+            <h3>items -14</h3>
+        </div>
+        <div class="items">
+            <h3>items -15</h3>
+        </div>
+        <div class="items">
+            <h3>items -16</h3>
+        </div>
+        <div class="items">
+            <h3>items -17</h3>
+        </div>
+        <div class="items">
+            <h3>items -18</h3>
+        </div>
+        <div class="items">
+            <h3>items -19</h3>
+        </div>
+        <div class="items">
+            <h3>items -20</h3>
+        </div>
+    </div>
+</body>
+</html>
