@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #first{
+            color: yellow !important;
+        }
+        *{
+            color: aqua !important;
+        }
+        h3{
+            color: red;
+            color: green;
+        }
+        .first{
+            color: blue !important;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="first" id="first" style="color: blueviolet;">This is my first text</h3>
+    <h3>This is my second text</h3>
+    <h3 id="first">This is my third</h3>
+    <h3>This is my fourt</h3>
+</body>
+</html>
