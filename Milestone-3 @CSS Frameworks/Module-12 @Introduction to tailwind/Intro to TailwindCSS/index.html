@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-fuchsia-200 my-10 ">
+
+<body>
     <h3 class="text-red-500 mx-auto text-center ">Hi mama , ki khobor</h3>
     <h3>kmn acho tmi</h3>
     <h3 class="text-blue-800">valo to?</h3>
 
 
-    <p class="bg-sky-600 border-stone-900 border-8 text-center w-40 mx-auto text-2xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio et ullam facere omnis ut numquam deserunt saepe architecto culpa velit dolorem aut esse minus sapiente, ab sed veritatis quia voluptatum?</p>
+    <p class="bg-sky-600 border-stone-900 border-8 text-center text-2xl">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Distinctio et ullam facere omnis ut numquam deserunt saepe architecto culpa velit dolorem aut
+        esse minus sapiente, ab sed veritatis quia voluptatum?</p> -->
+
+ <!-- flex  -->
+
+    <section>
+        <div class="m-4 flex flex-col md:flex-row justify-center items-center">
+            <div class="w-24 text-black-100 h-24 border-2 border-blue-300 p-2 bg-red-100 text-xl">Box - 1</div>
+            <div class="w-24 text-black-100 h-24 border-2 border-blue-300 p-2 bg-red-100">Box - 2</div>
+            <div class="w-24 text-black-100 h-24 border-2 border-blue-300 p-2 bg-red-100">Box - 3</div>
+            <div class="w-24 text-black-100 h-24 border-2 border-blue-300 p-2 bg-red-100">Box - 4</div>
+        </div>
+    </section>
+
+    <!-- grid  -->
+    <section class="grid md:grid-cols-4 gap-2 m-2">
+        <div class="bg-blue-300 rounded-lg p-4">box 2</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 4</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 5</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 6</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 7</div>
+        <div class="md:col-span-2 bg-blue-300 rounded-lg p-4">box 3</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 8</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 9</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 10</div>
+        <div class="md:row-span-3 bg-blue-300 rounded-lg p-4">box 11</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 12</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 13</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 14</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 15</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 16</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 17</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 18</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 19</div>
+        <div class="bg-blue-300 rounded-lg p-4">box 20</div>
+    </section>
+
+    <hr>
+
+    <section class="m-8">
+        <div class="grid gap-2 grid-cols-1 md:grid-cols-4">
+            <div class="bg-yellow-300 md:col-span-4">Header </div>
+            <div class="bg-yellow-300">nav</div>
+            <div class="bg-yellow-300 md:col-span-3">main </div>
+            <div class="bg-yellow-300 md:col-span-4">footer</div>
+        </div>
+    </section>
 
 </html>
