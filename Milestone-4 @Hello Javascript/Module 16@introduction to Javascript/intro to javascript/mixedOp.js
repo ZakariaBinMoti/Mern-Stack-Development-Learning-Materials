@@ -6,3 +6,6 @@ var fullName = first + second;
 // console.log('40'+2);
 console.log(40-'20');
 console.log('50'-10);
+
+var c = 10;
+console.log('20' + c - 1);
