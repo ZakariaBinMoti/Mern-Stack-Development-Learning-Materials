@@ -31,3 +31,8 @@ var lastExamResult = 89;
  * 4. null
  * 5. Number 
 */
+
+
+
+let a;
+console.log(a);
