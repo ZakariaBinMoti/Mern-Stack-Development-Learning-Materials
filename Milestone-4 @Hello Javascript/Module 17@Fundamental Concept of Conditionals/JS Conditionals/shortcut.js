@@ -18,3 +18,5 @@ else {
 
 
 
+let userId = 10;
+console.log(!!userId);
