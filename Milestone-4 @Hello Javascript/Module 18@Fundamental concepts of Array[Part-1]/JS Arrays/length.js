@@ -4,3 +4,4 @@ console.log(numbers.length);
 const names = ['abul', 'mofij', 'sakib', 12];
 console.log(names.length);
 console.log(typeof(names[2]));
+console.log(numbers.length);
