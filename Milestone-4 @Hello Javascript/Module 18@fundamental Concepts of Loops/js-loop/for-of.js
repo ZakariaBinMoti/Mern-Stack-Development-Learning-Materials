@@ -21,7 +21,7 @@ for (const fruit of fruits) {
 
 let i = 0;
 
-for(const hi of i){
+for(const hi of numbers){
     i = i+1;
 }
 console.log(i);
