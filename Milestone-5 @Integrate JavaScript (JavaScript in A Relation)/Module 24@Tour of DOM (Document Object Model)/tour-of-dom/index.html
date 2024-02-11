@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour of Dom</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to my DOM</h1>
+      <h1>Welcome to my DOM</h1>
     </header>
     <main>
-        <h1>My awesome DOM de re baba</h1>
-        <ul>
-            <li class="list-item">jalali</li>
-            <li class="list-item">kamali</li>
-            <li class="list-item">lilali</li>
-            <li class="list-item">gilali</li>
-        </ul>
+      <h1>My awesome DOM de re baba</h1>
+      <ul>
+        <li class="list-item">jalali</li>
+        <li class="list-item">kamali</li>
+        <li class="list-item">lilali</li>
+        <li class="list-item">gilali</li>
+      </ul>
     </main>
 
     <section>
-        <h1>Places</h1>
-        <ul>
-            <li>sundarban</li>
-            <li>kandarban</li>
-            <li id="katabon">katabon</li>
-            <li>shalbon</li>
-            <li>modhubon</li>
-        </ul>
+      <h1>Places</h1>
+      <ul>
+        <li>sundarban</li>
+        <li>kandarban</li>
+        <li id="katabon">katabon</li>
+        <li>shalbon</li>
+        <li>modhubon</li>
+      </ul>
     </section>
-
 
     <script src="js/dom.js"></script>
     <script>
-        // console.log('adding js inside the html file');
-        // console.log(document.body);
-        // const student = {
-        //     name: 'abul',
-        //     ID: 18,
-        //     study: function (time){
-        //         console.log(time, 'study korteche');
-        //     }
-        // }
+      // console.log('adding js inside the html file');
+      // console.log(document.body);
+      // const student = {
+      //     name: 'abul',
+      //     ID: 18,
+      //     study: function (time){
+      //         console.log(time, 'study korteche');
+      //     }
+      // }
 
+      // const licollections = document.getElementsByTagName('li');
+      // // console.log(licollections);
+      // for (const li of licollections){
+      //     console.log(li.innerText);
+      // }
 
-        // const licollections = document.getElementsByTagName('li');
-        // // console.log(licollections);
-        // for (const li of licollections){
-        //     console.log(li.innerText);
-        // }
-        
+      // const h1Collections = document.getElementsByTagName('h1');
+      //     for (const h1 of h1Collections) {
+      //         console.log(h1.innerText);
+      //     }
 
-        // const h1Collections = document.getElementsByTagName('h1');
-        //     for (const h1 of h1Collections) {
-        //         console.log(h1.innerText);
-        //     }
+      const listItems = document.getElementsByClassName("list-item");
+      for (const list of listItems) {
+        list.innerText = "changed by js -> " + list.innerText;
+        console.log(list.innerText);
+      }
 
+      document.getElementById("katabon").innerText = "lalalalalsa kjfhjhsgbfkj";
 
-        const listItems = document.getElementsByClassName('list-item');
-        for (const list of listItems){
-            list.innerText = 'changed by js -> ' + list.innerText;
-            console.log(list.innerText);
-        }
+      const someli = document.querySelectorAll(".list-item");
+      for (const iterator of someli) {
+        iterator.innerText = "again";
+      }
 
-        document.getElementById('katabon').innerText = ' lalalalalsakjfhjhsgbfkj'
- 
-
+      const somli = document.querySelector(".list-item");
+      somli.innerText = "changed by querySelector";
     </script>
-</body>
+  </body>
 </html>
