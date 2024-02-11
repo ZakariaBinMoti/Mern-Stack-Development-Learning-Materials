@@ -13,12 +13,23 @@
     <main>
         <h1>My awesome DOM de re baba</h1>
         <ul>
-            <li>jalali</li>
-            <li>kamali</li>
-            <li>lilali</li>
-            <li>gilali</li>
+            <li class="list-item">jalali</li>
+            <li class="list-item">kamali</li>
+            <li class="list-item">lilali</li>
+            <li class="list-item">gilali</li>
         </ul>
     </main>
+
+    <section>
+        <h1>Places</h1>
+        <ul>
+            <li>sundarban</li>
+            <li>kandarban</li>
+            <li id="katabon">katabon</li>
+            <li>shalbon</li>
+            <li>modhubon</li>
+        </ul>
+    </section>
 
 
     <script src="js/dom.js"></script>
@@ -34,19 +45,27 @@
         // }
 
 
-        const licollections = document.getElementsByTagName('li');
-        // console.log(licollections);
-        for (const li of licollections){
-            console.log(li.innerText);
-        }
+        // const licollections = document.getElementsByTagName('li');
+        // // console.log(licollections);
+        // for (const li of licollections){
+        //     console.log(li.innerText);
+        // }
         
 
-        const h1Collections = document.getElementsByTagName('h1');
-            for (const h1 of h1Collections) {
-                console.log(h1.innerText);
-            }
+        // const h1Collections = document.getElementsByTagName('h1');
+        //     for (const h1 of h1Collections) {
+        //         console.log(h1.innerText);
+        //     }
 
 
+        const listItems = document.getElementsByClassName('list-item');
+        for (const list of listItems){
+            list.innerText = 'changed by js -> ' + list.innerText;
+            console.log(list.innerText);
+        }
+
+        document.getElementById('katabon').innerText = ' lalalalalsakjfhjhsgbfkj'
+ 
 
     </script>
 </body>
