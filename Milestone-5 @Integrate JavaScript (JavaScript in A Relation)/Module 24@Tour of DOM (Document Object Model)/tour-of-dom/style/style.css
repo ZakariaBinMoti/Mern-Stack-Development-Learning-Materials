@@ -8,3 +8,7 @@ h1{
 #red{
     color: red;
 }
+
+#large-font{
+    font-size: larger;
+}
