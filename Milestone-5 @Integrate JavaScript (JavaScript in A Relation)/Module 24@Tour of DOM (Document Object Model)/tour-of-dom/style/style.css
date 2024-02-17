@@ -12,3 +12,6 @@ h1{
 #large-font{
     font-size: larger;
 }
+.bg-color{
+    background-color: red;
+}
